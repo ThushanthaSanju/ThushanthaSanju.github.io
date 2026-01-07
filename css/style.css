@@ -149,6 +149,8 @@
 }
 
 .service-item {
+  height: auto !important; /* override any fixed height */
+  min-height: 260px;
   padding: 30px;
   height: 700px;
   text-align: center;
@@ -219,4 +221,67 @@
 }
 .container1 {
   margin-top: 20px;
+}
+/* Portfolio alignment fix */
+.portfolio-card2 {
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* Same image height for all cards */
+.portfolio-img-wrap {
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+}
+
+.portfolio-img2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Make text look consistent */
+.portfolio-card2 h5 {
+  margin: 0;
+}
+.portfolio-card2 .text-muted {
+  opacity: 0.85;
+}
+/* Education section styling */
+.education-card {
+  border-radius: 10px;
+}
+
+.edu-logo img {
+  width: 90px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  background: transparent;
+}
+
+.edu-link {
+  color: #20c997;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.edu-link:hover {
+  text-decoration: underline;
+}
+/* Publications */
+.publication-card {
+  border-radius: 10px;
+}
+
+.publication-card h5 {
+  line-height: 1.4;
+}
+
+.publication-card .btn {
+  font-weight: 500;
 }
